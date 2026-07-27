@@ -1,0 +1,21 @@
+person1 = {
+    "name" : {
+      "professional": "emily",
+      "home name": "emy",  
+    },
+    "BirthYear" : 2004,
+    "addresses": {
+    "home": "parel, Mumbai",
+    "office addresses": {
+     "office1" : "fort, Mumbai",
+     "office2": "andheri east, Mumbai"   
+    },
+    },
+    "subjects": ["python", "C", "C++", "JavaScript"]
+  }
+
+
+#print(person1)
+print("home address =>", person1["addresses"]["home"])
+print("office address =>", person1["addresses"]["office addresses"]["office1"])
+print(person1["subjects"])
