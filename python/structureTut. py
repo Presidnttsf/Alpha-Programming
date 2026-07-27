@@ -18,4 +18,4 @@ person1 = {
 #print(person1)
 print("home address =>", person1["addresses"]["home"])
 print("office address =>", person1["addresses"]["office addresses"]["office1"])
-print(person1["subjects"])
+print(person1["subjects"]). 
