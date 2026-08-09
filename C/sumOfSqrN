@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int sumOfSqr(int n){
+    int sum = 0;
+    int square;
+    for(int i=1; i<=n; i++){
+        printf("Index is %d, sum is %d and square of %d is %d\n", i, sum, i, i*i);
+        printf("Sum of %d + %d = %d\n", sum, i*i, sum+i*i);
+        sum += (i*i);
+    };
+return sum;
+};
+
+/*index is 1| sum is 0 and square of 1 is 1
+sum of sum and square is sum+square*/
+
+int main()
+{ 
+    printf("%d", sumOfSqr(3));
+    
+    return 0;
+}
