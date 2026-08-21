@@ -22,9 +22,10 @@ for (String val: cars){
         // scores[3] = 97;
         // scores[4] = 95;
         // scores[6] = 99;
-        
+        int sum = 0;
         for(int val : scores){
-          System.out.println(val);
+           sum = sum + val;
+          System.out.println("this is total " + sum);
         }
         
         
