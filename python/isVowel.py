@@ -8,9 +8,10 @@ def isConsonant (char):
     if(char in "0123456789"):
         return "invalid input";
 
-    if(char == 'a' or char == 'e' or char =='i' or char =='o' or char =='u' or char == 'A' or char == 'E' or char =='I' or char =='O' or char =='U'):
-        return "vowel";
-    
+    char = char.lower();
+    print("checkingcase", char)
+    if(char == 'a' or char == 'e' or char =='i' or char =='o' or char =='u'):
+        return "Vowel";
     else:
         return "consonant";
 
