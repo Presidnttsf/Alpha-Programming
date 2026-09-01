@@ -1,0 +1,403 @@
+# HOTEL BILL GENERATOR USING STRUCTURE IN C
+
+## Project Objective
+
+Create a Hotel Bill Generator program using C language.
+
+The hotel has different food items such as:
+
+* Biryani
+* Roti
+* Korma
+* Coldrink
+
+The program should allow us to store food information, take the quantity ordered by the customer, calculate the total price of each item, and generate the final bill.
+
+---
+
+# STEP 1: Understand the Problem
+
+Before writing code, understand what we need to build.
+
+For every food item, we need to store:
+
+1. Food Name
+2. Price
+3. Quantity Ordered
+4. Total Price
+
+Example:
+
+| Item    | Price | Quantity | Total |
+| ------- | ----- | -------- | ----- |
+| Biryani | 200   | 2        | 400   |
+| Roti    | 20    | 5        | 100   |
+
+Formula:
+
+Total = Price × Quantity
+
+---
+
+# STEP 2: Create a Structure
+
+Create a structure called `FoodItem`.
+
+The structure should contain:
+
+* `name`
+* `price`
+* `quantity`
+* `total`
+
+Example structure:
+
+```c
+struct FoodItem {
+    char name[30];
+    float price;
+    int quantity;
+    float total;
+};
+```
+
+### Explanation
+
+A structure allows us to group different types of data together.
+
+For example, one food item can contain:
+
+```text
+Biryani
+│
+├── Name → Biryani
+├── Price → 200
+├── Quantity → 2
+└── Total → 400
+```
+
+---
+
+# STEP 3: Create an Array of Structures
+
+Instead of creating separate variables for every food item:
+
+```c
+struct FoodItem biryani;
+struct FoodItem roti;
+struct FoodItem korma;
+```
+
+Create an array of structures.
+
+Example:
+
+```c
+struct FoodItem menu[4];
+```
+
+This means we can store information about 4 food items.
+
+```text
+menu[0] → Biryani
+menu[1] → Roti
+menu[2] → Korma
+menu[3] → Coldrink
+```
+
+---
+
+# STEP 4: Store Food Information
+
+Now store the default food information.
+
+The hotel already knows:
+
+* Food Name
+* Food Price
+
+Example:
+
+```text
+menu[0]
+Name  → Biryani
+Price → 200
+
+menu[1]
+Name  → Roti
+Price → 20
+
+menu[2]
+Name  → Korma
+Price → 150
+
+menu[3]
+Name  → Coldrink
+Price → 50
+```
+
+### Think About This
+
+Which information is predefined by the hotel?
+
+* Name
+* Price
+
+Which information should come from the customer?
+
+* Quantity
+
+---
+
+# STEP 5: Display the Hotel Menu
+
+Display the available food items to the customer.
+
+Expected Output:
+
+```text
+--------- HOTEL MENU ---------
+
+1. Biryani     ₹200
+2. Roti        ₹20
+3. Korma       ₹150
+4. Coldrink    ₹50
+```
+
+Use a loop to display all items.
+
+Access structure members using the dot (`.`) operator.
+
+Example:
+
+```c
+menu[i].name
+menu[i].price
+```
+
+### Explanation
+
+`menu[i]` selects one structure from the array.
+
+`.name` accesses the name member.
+
+`.price` accesses the price member.
+
+---
+
+# STEP 6: Take Quantity from Customer
+
+Ask the customer how many items they want.
+
+Example:
+
+```text
+Enter quantity for Biryani:
+Enter quantity for Roti:
+Enter quantity for Korma:
+Enter quantity for Coldrink:
+```
+
+Store the quantity inside:
+
+```c
+menu[i].quantity
+```
+
+Use a loop to take quantity for all food items.
+
+Logic:
+
+```text
+For each food item:
+
+    Ask quantity
+    Store quantity
+```
+
+---
+
+# STEP 7: Calculate Individual Item Total
+
+Calculate the total price for every food item.
+
+Formula:
+
+```text
+Total = Price × Quantity
+```
+
+Example:
+
+```text
+Biryani Price = ₹200
+Quantity = 2
+
+Total = 200 × 2
+
+Total = ₹400
+```
+
+Store the result inside:
+
+```c
+menu[i].total
+```
+
+Logic:
+
+```text
+For each food item:
+
+    Total = Price × Quantity
+```
+
+---
+
+# STEP 8: Calculate Grand Total
+
+Create a variable:
+
+```c
+float grandTotal = 0;
+```
+
+Add the total price of every food item.
+
+Logic:
+
+```text
+For each food item:
+
+    grandTotal = grandTotal + item total
+```
+
+Example:
+
+```text
+Biryani Total  = 400
+Roti Total     = 100
+Korma Total    = 150
+Coldrink Total = 100
+
+Grand Total = 750
+```
+
+---
+
+# STEP 9: Generate the Final Bill
+
+Display the complete bill.
+
+Expected Output:
+
+```text
+========================================
+              HOTEL BILL
+========================================
+
+Item        Price       Qty       Total
+----------------------------------------
+Biryani     200         2         400
+Roti        20          5         100
+Korma       150         1         150
+Coldrink    50          2         100
+----------------------------------------
+
+Grand Total: ₹750
+
+========================================
+       Thank You! Visit Again
+========================================
+```
+
+Use a loop to print all ordered items.
+
+---
+
+# COMPLETE PROGRAM FLOW
+
+```text
+START
+
+↓
+Create FoodItem Structure
+
+↓
+Create Array of Structures
+
+↓
+Store Food Names and Prices
+
+↓
+Display Hotel Menu
+
+↓
+Take Quantity from Customer
+
+↓
+Calculate Individual Item Total
+
+↓
+Calculate Grand Total
+
+↓
+Print Final Bill
+
+↓
+END
+```
+
+---
+
+# CONCEPTS PRACTICED IN THIS PROJECT
+
+* Structures
+* Array of Structures
+* Loops
+* User Input
+* Arithmetic Operations
+* Structure Member Access
+* Formatted Output
+* Bill Calculation
+
+---
+
+# FUTURE IMPROVEMENTS / CHALLENGES
+
+After completing the basic project, try adding:
+
+1. GST Calculation
+2. Discount System
+3. Customer Name
+4. Customer Mobile Number
+5. Bill Number
+6. Date and Time
+7. Allow customer to select items using menu number
+8. Allow ordering multiple times
+9. Add more food items
+10. Create functions such as:
+
+```text
+displayMenu()
+takeOrder()
+calculateBill()
+generateBill()
+```
+
+---
+
+# IMPORTANT LEARNING APPROACH
+
+First, build the project using:
+
+* Structure
+* Array
+* Loop
+* Basic Calculations
+
+Do not use functions initially.
+
+Once the basic project is working, improve the project by dividing it into functions.
+
+This will help in understanding the logic step by step before making the program more organized.
