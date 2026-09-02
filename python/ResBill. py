@@ -1,0 +1,64 @@
+# Menu (like the struct array in C)
+menu = [
+    {"name": "Biryani",    "price": 200},
+    {"name": "Roti",       "price": 20},
+    {"name": "Korma",      "price": 150},
+    {"name": "Cold Drink", "price": 50},
+    {"name": "Lassi",      "price": 70},
+    {"name": "Ice Cream",  "price": 100},
+    {"name": "Steam Rice", "price": 100},
+    {"name": "Veg Mix",    "price": 120},
+]
+
+orders = []       # grows dynamically, no fixed size needed in Python
+grand_total = 0.0
+
+
+def show_menu():
+    print("\n========== MENU ==============")
+    print(f"{'S.No':<5}   {'ITEMS':<15} PRICE")
+    print("==============================")
+    for i, item in enumerate(menu, start=1):
+        print(f"{i}.      {item['name']:<15} Rs. {item['price']}")
+    print("==============================")
+
+
+def main():
+    global grand_total
+    show_menu()
+
+    while True:
+        choice = int(input("\nEnter item number (0 to stop): "))
+
+        if choice > len(menu):
+            print("Invalid input")
+            return
+        if choice == 0:
+            break
+
+        quantity = int(input("Enter quantity: "))
+
+        item = menu[choice - 1]
+        total = item["price"] * quantity
+
+        # Equivalent of orders[count] = menu[choice-1]; orders[count].quantity = ...
+        orders.append({
+            "name": item["name"],
+            "price": item["price"],
+            "quantity": quantity,
+            "total": total,
+        })
+
+        grand_total += total
+        # No manual count += 1 needed — append() grows the list for us
+
+    print("\n===== BILL =====")
+    for o in orders:
+        print(f"{o['name']} x {o['quantity']} = Rs.{o['total']:.2f}")
+
+    print("-----------------")
+    print(f"Grand Total = Rs.{grand_total:.2f}")
+
+
+if __name__ == "__main__":
+    main()
