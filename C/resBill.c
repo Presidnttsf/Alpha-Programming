@@ -40,11 +40,11 @@ int main()
     struct FoodItems orders[TOTAL_ITEMS];
  // Display Menu
     printf("\n========== MENU ==============\n");
-    printf("%-5s %-15s %s", "S.No", "ITEMS", "PRICE\n");
+    printf("%-5s   %-15s %s", "S.No", "ITEMS", "PRICE\n");
     printf("==============================\n");
     for(int i=0; i<TOTAL_ITEMS; i++){
 
-    printf("%-5d %-15s Rs. %d \n", i+1, menu[i].name, menu[i].price);
+    printf("%d.      %-15s Rs. %d \n", i+1, menu[i].name, menu[i].price);
     }
     printf("==============================\n");
 
