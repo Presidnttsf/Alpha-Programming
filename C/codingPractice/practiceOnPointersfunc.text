@@ -1,0 +1,236 @@
+# C Programming — Pointer + Function Tasks
+
+## Task 1 — Increment Counter
+
+Create a function:
+
+`increment(int *value)`
+
+The function should increase the original variable by 1.
+
+Expected:
+
+```text
+Before: 10
+After: 11
+```
+
+---
+
+## Task 2 — Swap Two Numbers
+
+Create a function:
+
+`swap(int *a, int *b)`
+
+Given:
+
+```text
+a = 10
+b = 20
+```
+
+Expected:
+
+```text
+a = 20
+b = 10
+```
+
+---
+
+## Task 3 — Sum and Difference
+
+Create a function:
+
+`calculate(int a, int b, int *sum, int *difference)`
+
+Given:
+
+```text
+a = 20
+b = 8
+```
+
+Expected:
+
+```text
+Sum = 28
+Difference = 12
+```
+
+---
+
+## Task 4 — Find Maximum in an Array
+
+Create a function:
+
+`findMax(int *arr, int size)`
+
+Given:
+
+```text
+10 50 20 80 30
+```
+
+Expected:
+
+```text
+Maximum = 80
+```
+
+Try to solve this using pointer arithmetic instead of array indexing.
+
+---
+
+## Task 5 — Double Every Array Element
+
+Create a function:
+
+`doubleValues(int *arr, int size)`
+
+Given:
+
+```text
+10 20 30 40 50
+```
+
+After calling the function:
+
+```text
+20 40 60 80 100
+```
+
+---
+
+## Task 6 — Find First Even Number
+
+Create a function:
+
+`int *findEven(int *arr, int size)`
+
+Given:
+
+```text
+7 9 13 18 25 30
+```
+
+The function should return a pointer to the first even number.
+
+Expected:
+
+```text
+First even number = 18
+```
+
+---
+
+## Task 7 — Find Minimum and Maximum
+
+Create a function:
+
+`findMinMax(int *arr, int size, int *min, int *max)`
+
+Given:
+
+```text
+45 12 89 34 7 56
+```
+
+Expected:
+
+```text
+Minimum = 7
+Maximum = 89
+```
+
+---
+
+## Task 8 — Student Marks Analyzer
+
+Create a function:
+
+`analyzeMarks(int *marks, int size, int *total, float *average, int *highest)`
+
+Given:
+
+```text
+75 82 91 68 88
+```
+
+Expected:
+
+```text
+Total = 404
+Average = 80.80
+Highest = 91
+```
+
+---
+
+## Task 9 — Like Counter
+
+Create a function:
+
+`void likeCounter(int *likes)`
+
+Start with:
+
+```text
+likes = 0
+```
+
+Call the function 3 times.
+
+Expected:
+
+```text
+Likes = 3
+```
+
+Think carefully about the difference between:
+
+`++(*likes)`
+
+and
+
+`*(++likes)`
+
+---
+
+## Task 10 — Return Address of Largest Element
+
+Create a function:
+
+`int *findLargest(int *arr, int size)`
+
+Given:
+
+```text
+10 25 7 90 45
+```
+
+The function should return the address of the largest element.
+
+Expected:
+
+```text
+Largest value = 90
+Address = ...
+```
+
+Then use the returned pointer to change the largest value from `90` to `100`.
+
+Expected:
+
+```text
+Largest value = 100
+```
+
+### Rules
+
+* Use functions for every task.
+* Use pointers wherever specified.
+* Do not use global variables.
+* Try to understand whether you are modifying the **value** or the **pointer**.
+* For array tasks, try pointer arithmetic where requested.
