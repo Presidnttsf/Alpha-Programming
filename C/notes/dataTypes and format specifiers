@@ -1,0 +1,428 @@
+# C++ Data Types, Limits & Format Specifiers
+
+## 1. Integer Data Types
+
+| Data Type            | Typical Size | Minimum / Maximum Value                                 | Format Specifier |
+| -------------------- | -----------: | ------------------------------------------------------- | ---------------- |
+| `short`              |      2 bytes | -32,768 to 32,767                                       | `%hd`            |
+| `unsigned short`     |      2 bytes | 0 to 65,535                                             | `%hu`            |
+| `int`                |      4 bytes | -2,147,483,648 to 2,147,483,647                         | `%d`             |
+| `unsigned int`       |      4 bytes | 0 to 4,294,967,295                                      | `%u`             |
+| `long`               | 4 or 8 bytes | Platform dependent                                      | `%ld`            |
+| `unsigned long`      | 4 or 8 bytes | Platform dependent                                      | `%lu`            |
+| `long long`          |      8 bytes | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | `%lld`           |
+| `unsigned long long` |      8 bytes | 0 to 18,446,744,073,709,551,615                         | `%llu`           |
+
+### Example
+
+```cpp
+int age = 25;
+long long population = 8000000000LL;
+
+printf("%d\n", age);
+printf("%lld\n", population);
+```
+
+---
+
+# 2. Floating-Point Data Types
+
+| Data Type     |  Typical Size |     Approx. Precision | Format Specifier |
+| ------------- | ------------: | --------------------: | ---------------- |
+| `float`       |       4 bytes |   ~6–7 decimal digits | `%f`             |
+| `double`      |       8 bytes | ~15–16 decimal digits | `%f`             |
+| `long double` | 8/12/16 bytes |    Platform dependent | `%Lf`            |
+
+### Example
+
+```cpp
+float price = 99.50f;
+double salary = 75000.4567;
+
+printf("%f\n", price);
+printf("%f\n", salary);
+```
+
+For decimal places:
+
+```cpp
+printf("%.2f", price);
+```
+
+Output:
+
+```text
+99.50
+```
+
+---
+
+# 3. Character Data Type
+
+| Data Type       | Typical Size | Range / Purpose           | Format Specifier |
+| --------------- | -----------: | ------------------------- | ---------------- |
+| `char`          |       1 byte | Character / small integer | `%c`             |
+| `signed char`   |       1 byte | -128 to 127               | `%hhd`           |
+| `unsigned char` |       1 byte | 0 to 255                  | `%hhu`           |
+
+Example:
+
+```cpp
+char grade = 'A';
+
+printf("%c", grade);
+```
+
+Output:
+
+```text
+A
+```
+
+A `char` can also store an integer value:
+
+```cpp
+char ch = 65;
+
+printf("%c\n", ch);
+printf("%d\n", ch);
+```
+
+Output:
+
+```text
+A
+65
+```
+
+---
+
+# 4. Boolean Data Type
+
+C++ provides:
+
+```cpp
+bool
+```
+
+It has two possible values:
+
+```cpp
+true
+false
+```
+
+Example:
+
+```cpp
+bool isPassed = true;
+```
+
+Using `cout`:
+
+```cpp
+cout << isPassed;
+```
+
+Output:
+
+```text
+1
+```
+
+To display `true` / `false`:
+
+```cpp
+cout << boolalpha << isPassed;
+```
+
+Output:
+
+```text
+true
+```
+
+For `printf`, there is no dedicated `%bool` format specifier.
+
+You can use:
+
+```cpp
+printf("%d", isPassed);
+```
+
+---
+
+# 5. `void`
+
+`void` means **no value / no return value**.
+
+Example:
+
+```cpp
+void display() {
+    cout << "Hello";
+}
+```
+
+A `void` function does not return a value.
+
+There is no `printf` format specifier for `void`.
+
+---
+
+# 6. Extended Integer Data Types
+
+C++ provides several integer types based on how much storage/range is required.
+
+```text
+short
+int
+long
+long long
+```
+
+Unsigned versions are also available:
+
+```text
+unsigned short
+unsigned int
+unsigned long
+unsigned long long
+```
+
+### Signed vs Unsigned
+
+Signed:
+
+```cpp
+int number = -100;
+```
+
+Can store positive and negative numbers.
+
+Unsigned:
+
+```cpp
+unsigned int number = 100;
+```
+
+Can store only zero and positive numbers.
+
+For a typical 32-bit `int`:
+
+```text
+int
+-2,147,483,648 → 2,147,483,647
+
+unsigned int
+0 → 4,294,967,295
+```
+
+Because unsigned integers do not need to represent negative numbers, they can use the available bits for a larger positive range.
+
+---
+
+# 7. Common Integer Limits
+
+For the commonly used sizes:
+
+### `signed char`
+
+```text
+-128 to 127
+```
+
+### `unsigned char`
+
+```text
+0 to 255
+```
+
+### `short`
+
+```text
+-32,768 to 32,767
+```
+
+### `unsigned short`
+
+```text
+0 to 65,535
+```
+
+### `int` (commonly 4 bytes)
+
+```text
+-2,147,483,648 to 2,147,483,647
+```
+
+### `unsigned int` (commonly 4 bytes)
+
+```text
+0 to 4,294,967,295
+```
+
+### `long long` (8 bytes)
+
+```text
+-9,223,372,036,854,775,808
+to
+9,223,372,036,854,775,807
+```
+
+### `unsigned long long` (8 bytes)
+
+```text
+0
+to
+18,446,744,073,709,551,615
+```
+
+---
+
+# 8. Important: Size Can Depend on the System
+
+Do not assume that every C++ compiler uses exactly the same size for every type.
+
+For example:
+
+```cpp
+sizeof(int)
+sizeof(long)
+sizeof(long long)
+```
+
+can be used to check the size on the current system.
+
+Example:
+
+```cpp
+cout << sizeof(int) << endl;
+cout << sizeof(long) << endl;
+cout << sizeof(long long) << endl;
+```
+
+`sizeof` returns the size in **bytes**.
+
+---
+
+# 9. Format Specifiers for `printf`
+
+## Integer
+
+```text
+%d       → int
+%i       → int
+%u       → unsigned int
+
+%hd      → short
+%hu      → unsigned short
+
+%ld      → long
+%lu      → unsigned long
+
+%lld     → long long
+%llu     → unsigned long long
+```
+
+## Floating Point
+
+```text
+%f       → floating-point output
+%Lf      → long double
+```
+
+## Character
+
+```text
+%c       → char
+```
+
+## String
+
+```text
+%s       → C-style string
+```
+
+Example:
+
+```cpp
+char name[] = "John";
+
+printf("%s", name);
+```
+
+---
+
+# 10. Complete Example
+
+```cpp
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+
+    short a = 100;
+    int b = 1000;
+    long c = 100000;
+    long long d = 10000000000LL;
+
+    unsigned int e = 500;
+
+    float f = 10.5f;
+    double g = 99.999;
+    long double h = 123.456L;
+
+    char ch = 'A';
+    bool status = true;
+
+    printf("short: %hd\n", a);
+    printf("int: %d\n", b);
+    printf("long: %ld\n", c);
+    printf("long long: %lld\n", d);
+
+    printf("unsigned int: %u\n", e);
+
+    printf("float: %f\n", f);
+    printf("double: %f\n", g);
+    printf("long double: %Lf\n", h);
+
+    printf("char: %c\n", ch);
+    printf("bool: %d\n", status);
+
+    return 0;
+}
+```
+
+# Quick Revision Table
+
+| Type           |     Typical Size | Format Specifier |
+| -------------- | ---------------: | ---------------- |
+| `char`         |           1 byte | `%c`             |
+| `short`        |          2 bytes | `%hd`            |
+| `int`          |          4 bytes | `%d`             |
+| `long`         |        4/8 bytes | `%ld`            |
+| `long long`    |          8 bytes | `%lld`           |
+| `unsigned int` |          4 bytes | `%u`             |
+| `float`        |          4 bytes | `%f`             |
+| `double`       |          8 bytes | `%f`             |
+| `long double`  |    8/12/16 bytes | `%Lf`            |
+| `bool`         | typically 1 byte | `%d`             |
+| C-style string |           varies | `%s`             |
+
+## Important C++ Note
+
+When using C++ streams, you normally don't need format specifiers:
+
+```cpp
+cout << age;
+cout << price;
+cout << name;
+```
+
+Format specifiers such as `%d`, `%f`, `%lld`, etc. are mainly used with C-style functions such as:
+
+```cpp
+printf()
+```
