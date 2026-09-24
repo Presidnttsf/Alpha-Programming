@@ -1,0 +1,64 @@
+C Programming Task: Student Biodata
+
+Task: Write a C program to create and print your complete biodata using variables.
+
+Requirements
+
+Create variables for the following information:
+
+Biodata	Suggested Data Type
+Full Name	char[]
+Age	int
+Gender	char
+Height	float
+Weight	double
+Mobile Number	char[]
+Email	char[]
+City	char[]
+State	char[]
+PIN Code	int
+College/School Name	char[]
+Percentage	float
+Your program must print:
+========== MY BIODATA ==========
+
+Full Name       : Tauseef Ahmed
+Age             : 25
+Gender          : M
+Height          : 5.8 ft
+Weight          : 65.50 kg
+Mobile Number   : 9876543210
+Email           : tauseef@gmail.com
+City            : Nagpur
+State           : Maharashtra
+PIN Code        : 440001
+College/School  : ABC College
+Percentage      : 85.50 %
+
+=================================
+Also print the size of every variable
+
+For example:
+
+========== VARIABLE SIZES ==========
+
+Size of age        : 4 bytes
+Size of gender     : 1 byte
+Size of height     : 4 bytes
+Size of weight     : 8 bytes
+...
+
+Use:
+
+sizeof(variable)
+Challenge
+
+After completing the program, answer these questions:
+
+Which variable uses the most memory?
+What is the difference between float and double?
+Why should a mobile number preferably be stored as a char[] instead of an int?
+What is the size of char?
+What is the size of int, float, and double on your computer?
+Why do we use %f for printing a floating-point value?
+What happens if you change float height to double height?
