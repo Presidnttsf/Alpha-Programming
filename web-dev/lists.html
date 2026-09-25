@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List tutorial</title>
+<style>
+.navContainer, ul{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: aquamarine;
+    width: 100%;
+    height: 50px;
+}
+
+.sideTab{
+position: relative;
+background-color: gray;
+width: 200px;
+height: 500px;
+
+}
+.sideTab h3 {
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cont2{
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.rightCont{
+    background-color: yellow;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    
+}
+
+.rightCont p, span{
+    background-color: red;
+}
+
+.cont{
+   position:relative;
+background-color: pink;
+width: 300px;
+height: 400px;
+display:flex;
+flex-direction:row;
+
+
+
+
+}
+    
+
+</style>
+
+</head>
+
+<body>
+    
+    <ul>
+        <li>Home</li>
+        <li>Content</li>
+        <li>Career</li>
+        <li>About</li>
+        <li>Contact Us</li>
+
+
+    </ul>    
+    <div class="cont2">
+    <section class="sideTab">
+<h3>Side Tab</h3>
+<ol>
+ <li>Home</li>
+        <li>Content</li>
+        <li>Career</li>
+        <li>About</li>
+        <li>Contact Us</li>
+
+</ol>
+    </section>
+
+    <div class="rightCont">
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+  <dt>Lassi</dt>
+  <dd>-cold and icy</dd>
+  <dt>IceCream</dt>
+  <dd>-Mango and choclate</dd>
+</dl>
+<p>This is my p tag.</p>
+<span>This is my span tag.</p>
+
+</div>
+<div class="cont">
+    <ol>
+        <li>Name</li>
+        <li>Age</li>
+        <li>City</li>
+        <li>Email</li>
+    </ol>
+</div>
+<div>
+    <dt>Tea</dt>
+    <dd>Sugar and Tea leaves</dd>
+    <dt>Apple</dt>
+    <dd>Red and Seeds</dd>
+    <dt></dt>
+</div>
+
+</div>
+
+</body>
+</html>
