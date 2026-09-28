@@ -1,0 +1,369 @@
+C++ OOPS PRACTICE QUESTIONS
+===========================
+
+Topics Covered:
+- Class and Object
+- Encapsulation
+- Constructors
+- Constructor Overloading
+- Function Overloading
+- Inheritance
+- Function Overriding
+- Polymorphism
+- Virtual Functions
+
+
+LEVEL 1 - BASIC OOP
+===================
+
+1. CLASS AND OBJECT
+-------------------
+Create a Student class with the following properties:
+
+- name
+- age
+- marks
+
+Create 3 Student objects and display their details.
+
+
+2. ENCAPSULATION
+----------------
+Create a BankAccount class with a private balance variable.
+
+Create public functions:
+
+- deposit()
+- withdraw()
+- checkBalance()
+
+The balance should not be directly accessible from outside the class.
+
+
+3. CONSTRUCTOR
+--------------
+Create a Car class with:
+
+- brand
+- model
+- price
+
+Initialize all values using a constructor and display the car details.
+
+
+4. CONSTRUCTOR OVERLOADING
+--------------------------
+Create a Rectangle class with the following constructors:
+
+- Default constructor
+- Constructor with length
+- Constructor with length and breadth
+
+Calculate and display the area for each case.
+
+
+5. MEMBER FUNCTIONS
+-------------------
+Create a Calculator class with the following functions:
+
+- add()
+- subtract()
+- multiply()
+- divide()
+
+Create an object of Calculator and perform all operations.
+
+
+LEVEL 2 - INHERITANCE AND POLYMORPHISM
+======================================
+
+6. SINGLE INHERITANCE
+---------------------
+Create a Person class with:
+
+- name
+- age
+
+Create a Student class that inherits Person and adds:
+
+- rollNo
+- course
+
+Display all student information.
+
+
+7. MULTILEVEL INHERITANCE
+--------------------------
+Create the following inheritance structure:
+
+Person
+   |
+Employee
+   |
+Manager
+
+Person should contain:
+
+- name
+- age
+
+Employee should contain:
+
+- employeeId
+- salary
+
+Manager should contain:
+
+- department
+- teamSize
+
+Display all information.
+
+
+8. HIERARCHICAL INHERITANCE
+---------------------------
+Create a base class Shape.
+
+Create three derived classes:
+
+- Circle
+- Rectangle
+- Triangle
+
+Each class should have its own function to calculate and display its area.
+
+
+9. FUNCTION OVERLOADING
+-----------------------
+Create a Calculator class with overloaded add() functions:
+
+add(int, int)
+
+add(int, int, int)
+
+add(double, double)
+
+Call all three functions and display the results.
+
+
+10. FUNCTION OVERRIDING
+-----------------------
+Create a base class Animal with a function:
+
+sound()
+
+Create two derived classes:
+
+- Dog
+- Cat
+
+Override the sound() function in both classes.
+
+Example:
+
+Dog -> Bark
+Cat -> Meow
+
+
+LEVEL 3 - PRACTICAL OOP PROBLEMS
+================================
+
+11. EMPLOYEE SALARY SYSTEM
+--------------------------
+Create an Employee class with:
+
+- employeeId
+- name
+- basicSalary
+
+Calculate:
+
+HRA = 20% of basic salary
+DA = 10% of basic salary
+
+Gross Salary = Basic Salary + HRA + DA
+
+Create objects for 5 employees and display their gross salary.
+
+
+12. BANKING SYSTEM
+------------------
+Create a BankAccount class with:
+
+- accountNumber
+- accountHolderName
+- balance
+
+Create functions:
+
+- deposit()
+- withdraw()
+- checkBalance()
+- displayAccountDetails()
+
+Conditions:
+
+- Deposit amount should be greater than 0.
+- Withdrawal should not be allowed if the balance is insufficient.
+- Display the updated balance after every transaction.
+
+
+13. STUDENT RESULT SYSTEM
+-------------------------
+Create a Student class with:
+
+- name
+- rollNo
+- English marks
+- Maths marks
+- Science marks
+
+Create functions to calculate:
+
+- Total Marks
+- Percentage
+- Grade
+
+Grade rules:
+
+90% and above  -> A
+75% to 89%     -> B
+60% to 74%     -> C
+40% to 59%     -> D
+Below 40%      -> F
+
+Use a constructor to initialize student information.
+
+
+14. SHAPE POLYMORPHISM
+----------------------
+Create the following class structure:
+
+Shape
+ |
+ +---- Circle
+ |
+ +---- Rectangle
+ |
+ +---- Triangle
+
+Create an area() function in the Shape class.
+
+Override area() in each derived class.
+
+Use a virtual function to achieve runtime polymorphism.
+
+
+15. EMPLOYEE MANAGEMENT SYSTEM
+------------------------------
+Create a base class:
+
+Employee
+
+Properties:
+
+- name
+- employeeId
+- salary
+
+Create three derived classes:
+
+- Developer
+- Tester
+- Manager
+
+Each derived class should have at least one additional property.
+
+Example:
+
+Developer -> programmingLanguage
+Tester    -> testingTool
+Manager   -> teamSize
+
+Create a displayDetails() function and display the details of each employee.
+
+
+CHALLENGE QUESTION
+==================
+
+16. E-COMMERCE PRODUCT SYSTEM
+-----------------------------
+Create a Product class with:
+
+- productId
+- name
+- price
+- quantity
+
+Create the following functions:
+
+- displayProduct()
+- calculateTotalPrice()
+- getPrice()
+- setPrice()
+
+Total Price:
+
+Total Price = Price × Quantity
+
+
+Now create a derived class:
+
+DiscountedProduct
+
+Additional property:
+
+- discountPercentage
+
+Calculate the final price after applying the discount.
+
+Formula:
+
+Discount Amount = Price × Discount Percentage / 100
+
+Final Price = Price - Discount Amount
+
+BONUS:
+
+Use a virtual function so that normal Product and DiscountedProduct
+calculate their final price differently.
+
+
+========================================
+OOP CONCEPTS TO REVISE BEFORE SOLVING
+========================================
+
+1. Class and Object
+2. Access Specifiers
+3. Encapsulation
+4. Constructors
+5. Constructor Overloading
+6. Function Overloading
+7. Inheritance
+8. Function Overriding
+9. Virtual Functions
+10. Runtime Polymorphism
+11. this Pointer
+12. Public / Private / Protected
+
+
+PRACTICE RULES
+==============
+
+1. Try to solve the questions without looking at the solution.
+2. Use proper class and function names.
+3. Keep data members private wherever possible.
+4. Use constructors where required.
+5. Use inheritance only when there is a logical relationship.
+6. Add comments to explain important parts of your code.
+7. Test your program with multiple inputs.
+8. Try to make the programs menu-driven where possible.
+
+
+DIFFICULTY LEVEL
+================
+
+Questions 1-5   -> Beginner
+Questions 6-10  -> Intermediate
+Questions 11-15 -> Advanced
+Question 16      -> Challenge
