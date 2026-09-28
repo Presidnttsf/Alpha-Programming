@@ -1,0 +1,84 @@
+
+    <!doctype html>
+    <html dir="ltr" lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <title>28 sept tut</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+        body {
+            background: white;
+            margin: 0;
+        }
+
+        .centerSearch{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap:initial;
+        height: 80vh;
+        
+        }
+
+        .searchBox{
+            display: flex;
+            justify-content:flex-start ;
+            align-items: center;
+            width: 60%;
+            padding: 12px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+
+        }
+        .searchBox input{
+            padding-left: 10px;
+            border: none;
+            outline: none;
+            flex: 1;
+        }
+
+        .searchBox button{
+
+            border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+        }
+
+        .searchBox .material-icons {
+    margin-left: auto;      
+    cursor: pointer;
+            color: gray;
+}
+
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="centerSearch">
+        <img width="300px" src="./assets/images/google-logo.jpg"></img>
+        <div class="searchBox"> 
+        <span><button id="plusBtn">+</button></span>
+            <input
+        type="text"
+        placeholder="Ask Google"    
+        >
+
+        <i class="material-icons">center_focus_strong</i>    
+        <i class="material-icons" style="font-size:24px">mic</i>
+    </div>
+        </div>
+        <script>
+            let plusEvent = document.getElementById("plusBtn")
+             plusEvent.addEventListener("click", function() {
+        // alert("Plus button clicked!");
+        let clr = document.body.style;
+        
+        clr.backgroundColor == "white" ? clr.backgroundColor = "yellow" : clr.backgroundColor = "white";
+             });
+        </script>
+    </body>
+    </html>
