@@ -1,0 +1,551 @@
+Practice Rule
+First understand the problem.
+Write the logic in your own words.
+Try to solve it without looking at the solution.
+Test with different inputs.
+Check edge cases such as 0, negative numbers, and duplicate values.
+Only look at a solution after making your own attempt.
+After solving a problem, try to solve it again using a different approach.
+This gives you 155 progressively arranged C problems, from basic variables and conditions all the way to pointers, structures, dynamic memory, file handling, and projects.
+Programming Practice Questions
+Beginner to Advanced
+
+LEVEL 1 – BEGINNER
+1. Print Your Details
+Write a C program to print:
+Name
+Age
+City
+College/Institute name
+2. Add Two Numbers
+Take two numbers from the user and print their sum.
+3. Basic Calculator
+Take two numbers and perform:
+Addition
+Subtraction
+Multiplication
+Division
+Modulus
+4. Area of Circle
+Take the radius from the user and calculate the area of a circle.
+5. Swap Two Numbers
+Swap two numbers using a third variable.
+6. Even or Odd
+Take a number and check whether it is even or odd.
+7. Positive, Negative or Zero
+Take a number and check whether it is:
+Positive
+Negative
+Zero
+8. Largest of Two Numbers
+Take two numbers and find the largest.
+9. Largest of Three Numbers
+Take three numbers and find the largest.
+10. Voting Eligibility
+Take age from the user and check whether the person is eligible for voting.
+11. Simple Interest
+Take principal, rate and time from the user and calculate simple interest.
+12. Temperature Conversion
+Convert temperature:
+Celsius to Fahrenheit
+Fahrenheit to Celsius
+13. Area and Perimeter of Rectangle
+Take length and width and calculate:
+Area
+Perimeter
+14. Total and Average Marks
+Take marks of 5 subjects and calculate:
+Total
+Average
+15. Character ASCII Value
+Take a character from the user and print its ASCII value.
+
+LEVEL 2 – CONDITIONS
+16. Leap Year
+Check whether a given year is a leap year.
+17. Divisibility Check
+Check whether a number is divisible by both 5 and 11.
+18. Student Grade
+Take marks and print the grade:
+90–100 → A
+80–89 → B
+70–79 → C
+60–69 → D
+Below 60 → F
+Also validate that marks are between 0 and 100.
+19. Calculator Using switch
+Create a calculator using switch:
+Addition
+Subtraction
+Multiplication
+Division
+Modulus
+20. Vowel or Consonant
+Take a character and check whether it is a vowel or consonant.
+21. Character Type
+Check whether a character is:
+Uppercase
+Lowercase
+Digit
+Special character
+22. Multiple of 3 and 7
+Check whether a number is divisible by both 3 and 7.
+23. Number in Range
+Take a number and check whether it is between 1 and 100.
+24. Three-Digit Number
+Check whether the given number is a three-digit number.
+25. Profit or Loss
+Take cost price and selling price and determine:
+Profit
+Loss
+No profit/no loss
+26. Electricity Bill
+Calculate an electricity bill based on the number of units consumed using different rates for different ranges.
+27. Calculator with Operator
+Take two numbers and an operator (+, -, *, /, %) and perform the selected operation.
+28. Day of the Week
+Take a number from 1–7 and print the corresponding day using switch.
+
+LEVEL 3 – LOOPS
+29. Print Numbers
+Print numbers from 1 to 100.
+30. Print Even Numbers
+Print all even numbers between 1 and 100.
+31. Print Odd Numbers
+Print all odd numbers between 1 and 100.
+32. Multiplication Table
+Take a number and print its table from 1 to 10.
+33. Sum of Numbers
+Take n and calculate:
+1 + 2 + 3 + ... + n
+34. Factorial Using Loop
+Calculate the factorial of a number using a loop.
+35. Count Digits
+Count the number of digits in an integer.
+Example:
+12345 → 5 digits
+36. Reverse a Number
+Reverse a number.
+Example:
+12345 → 54321
+37. Sum of Digits
+Calculate the sum of digits.
+Example:
+12345 → 15
+38. Print Numbers in Reverse
+Take n and print numbers from n to 1.
+39. Sum of Even Numbers
+Find the sum of all even numbers between 1 and n.
+40. Sum of Odd Numbers
+Find the sum of all odd numbers between 1 and n.
+41. Count Even and Odd Numbers
+Take n numbers from the user and count how many are:
+Even
+Odd
+42. Multiplication Tables
+Print multiplication tables from 1 to 10.
+43. Power Using Loop
+Calculate:
+base^exponent
+Example:
+2^5 = 32
+44. Product of Digits
+Find the product of all digits of a number.
+Example:
+1234 → 24
+45. First and Last Digit
+Find the first and last digit of a number.
+
+LEVEL 4 – NUMBER PROBLEMS
+46. Palindrome Number
+Check whether a number is a palindrome.
+Example:
+121 → Palindrome
+123 → Not Palindrome
+47. Prime Number
+Check whether a number is prime.
+48. Prime Numbers
+Print all prime numbers between 1 and 100.
+49. Armstrong Number
+Check whether a number is an Armstrong number.
+Example:
+153 → Armstrong
+50. Perfect Number
+Check whether a number is a perfect number.
+Example:
+6 → 1 + 2 + 3 = 6
+51. Fibonacci Series
+Print Fibonacci series up to n terms.
+Example:
+0 1 1 2 3 5 8 13
+52. GCD
+Find the GCD of two numbers.
+Example:
+12, 18 → 6
+53. LCM
+Find the LCM of two numbers.
+Example:
+12, 18 → 36
+54. Strong Number
+Check whether a number is a Strong Number.
+Example:
+145 → 1! + 4! + 5! = 145
+55. Automorphic Number
+Check whether a number's square ends with the same number.
+Example:
+25² = 625
+625 ends with 25, so it is Automorphic.
+56. Harshad Number
+Check whether a number is divisible by the sum of its digits.
+Example:
+18 → 1 + 8 = 9
+18 % 9 = 0
+57. Perfect Square
+Check whether a number is a perfect square.
+58. Count Prime Digits
+Count how many digits of a number are prime digits (2, 3, 5, 7).
+59. Largest Digit
+Find the largest digit in a number.
+Example:
+58321 → 8
+60. Smallest Digit
+Find the smallest digit in a number.
+Example:
+58321 → 1
+
+LEVEL 5 – FUNCTIONS
+61. Addition Function
+Create:
+int add(int a, int b);
+62. Even/Odd Function
+Create:
+int isEven(int n);
+Return 1 for even and 0 for odd.
+63. Maximum Function
+Create:
+int maximum(int a, int b);
+64. Factorial Function
+Create:
+int factorial(int n);
+65. Prime Function
+Create:
+int isPrime(int n);
+66. Calculator Using Functions
+Create separate functions for:
+add()
+subtract()
+multiply()
+divide()
+modulo()
+67. Minimum Function
+Create a function that accepts two numbers and returns the smaller number.
+68. Maximum of Three Numbers
+Create a function that accepts three numbers and returns the largest.
+69. Reverse Number Function
+Create a function that accepts a number and returns its reverse.
+70. Sum of Digits Function
+Create a function that returns the sum of digits of a number.
+71. Palindrome Function
+Create a function that checks whether a number is a palindrome.
+72. GCD Function
+Create a function to calculate the GCD of two numbers.
+73. LCM Function
+Create a function to calculate the LCM of two numbers.
+
+LEVEL 6 – RECURSION
+74. Factorial Using Recursion
+Calculate factorial using recursion.
+75. Sum 1 to N Using Recursion
+Calculate:
+1 + 2 + 3 + ... + n
+using recursion.
+76. Fibonacci Using Recursion
+Generate Fibonacci numbers using recursion.
+77. Power Using Recursion
+Calculate:
+2⁵ = 32
+using recursion.
+78. Reverse Number Using Recursion
+Example:
+1234 → 4321
+79. Sum of Digits Using Recursion
+Example:
+1234 → 10
+80. Palindrome Using Recursion
+Check whether a number is a palindrome using recursion.
+81. GCD Using Recursion
+Find the GCD of two numbers using recursion.
+82. Print Numbers Using Recursion
+Print numbers from 1 to n using recursion.
+83. Print Numbers in Reverse Using Recursion
+Print numbers from n to 1 using recursion.
+
+LEVEL 7 – ARRAYS
+84. Input and Print Array
+Take array elements from the user and print them.
+85. Sum of Array Elements
+Calculate the sum of all array elements.
+86. Find Maximum Element
+Find the largest element in an array.
+87. Find Minimum Element
+Find the smallest element in an array.
+88. Count Even and Odd Elements
+Count the number of even and odd elements in an array.
+89. Reverse an Array
+Example:
+1 2 3 4 5
+→
+5 4 3 2 1
+90. Search an Element
+Search for an element in an array.
+91. Count Frequency
+Example:
+Array:
+1 2 2 3 2 4
+Search:
+2
+Frequency:
+3
+92. Find Second Largest Element
+Find the second-largest element in an array.
+93. Find Second Smallest Element
+Find the second-smallest element in an array.
+94. Count Positive, Negative and Zero
+Count how many elements are:
+Positive
+Negative
+Zero
+95. Copy One Array to Another
+Copy all elements from one array into another array.
+96. Compare Two Arrays
+Check whether two arrays are equal.
+97. Separate Even and Odd Elements
+Store even and odd elements separately.
+
+LEVEL 8 – INTERMEDIATE ARRAY CHALLENGES
+98. Remove Duplicate Elements
+Example:
+1 2 2 3 4 4 5
+→
+1 2 3 4 5
+99. Sort an Array
+Sort an array in ascending order without using a built-in sorting function.
+100. Sort in Descending Order
+Sort an array from largest to smallest.
+101. Find Missing Number
+Example:
+1 2 3 5 6
+Missing:
+4
+102. Merge Two Arrays
+Merge two arrays into a single array.
+103. Rotate Array Left
+Example:
+1 2 3 4 5
+Left rotate by 1:
+2 3 4 5 1
+104. Rotate Array Right
+Example:
+1 2 3 4 5
+Right rotate by 1:
+5 1 2 3 4
+105. Find Common Elements
+Find elements that are present in both arrays.
+106. Find Unique Elements
+Print only elements that appear once in an array.
+107. Find Repeated Elements
+Print all elements that appear more than once.
+108. Find Largest Difference
+Find the difference between the largest and smallest elements.
+
+LEVEL 9 – STRINGS
+109. Input and Print String
+Take a string from the user and print it.
+110. Find String Length
+Find the length of a string without using strlen().
+111. Copy a String
+Copy one string into another without using strcpy().
+112. Compare Two Strings
+Compare two strings without using strcmp().
+113. Reverse a String
+Reverse a string without using a built-in reverse function.
+114. Palindrome String
+Check whether a string is a palindrome.
+Example:
+madam → Palindrome
+115. Count Vowels and Consonants
+Count the number of vowels and consonants in a string.
+116. Count Digits and Special Characters
+Count digits and special characters in a string.
+117. Convert Lowercase to Uppercase
+Convert lowercase characters to uppercase without using strupr().
+118. Convert Uppercase to Lowercase
+Convert uppercase characters to lowercase.
+119. Count Words
+Count the number of words in a sentence.
+120. Character Frequency
+Count how many times a particular character appears in a string.
+
+LEVEL 10 – POINTERS
+121. Pointer Basics
+Create a variable and use a pointer to print:
+Value
+Address
+122. Change Value Using Pointer
+Modify a variable's value using a pointer.
+123. Swap Using Pointers
+Swap two numbers using pointers.
+124. Addition Using Pointers
+Add two numbers using pointers.
+125. Array Using Pointer
+Print all array elements using pointer arithmetic.
+126. Find Maximum Using Pointer
+Find the maximum element of an array using pointers.
+127. String Using Pointer
+Print a string using a character pointer.
+128. Reverse Array Using Pointer
+Reverse an array using pointers.
+129. Pointer and Function
+Create a function that modifies a variable using a pointer.
+
+LEVEL 11 – STRUCTURES
+130. Student Structure
+Create a Student structure containing:
+ID
+Name
+Age
+Take input and display student details.
+131. Multiple Students
+Create an array of structures to store information about multiple students.
+132. Employee Structure
+Create an Employee structure containing:
+ID
+Name
+Salary
+Position
+133. Find Highest Salary
+Store multiple employees and find the employee with the highest salary.
+134. Student with Highest Marks
+Store multiple students and find the student with the highest marks.
+135. Nested Structure
+Create a structure containing another structure.
+Example:
+Student → Address
+136. Structure and Functions
+Pass a structure to a function and display its information.
+137. Structure Array Search
+Search for a student by ID from an array of students.
+
+LEVEL 12 – DYNAMIC MEMORY ALLOCATION
+138. Dynamic Integer Array
+Create an integer array using malloc().
+139. Dynamic Array Using calloc()
+Create an array using calloc() and display its values.
+140. Resize Array
+Use realloc() to increase the size of a dynamically allocated array.
+141. Free Memory
+Create dynamically allocated memory and properly release it using free().
+142. Dynamic Student Array
+Create a dynamic array of Student structures.
+
+LEVEL 13 – FILE HANDLING
+143. Write to a File
+Create a file and write text into it.
+144. Read from a File
+Open a file and display its contents.
+145. Append to a File
+Add new content to an existing file without deleting the old content.
+146. Student Records File
+Store student information in a file.
+147. Count Characters in File
+Read a file and count the number of characters.
+148. Count Words in File
+Read a file and count the number of words.
+149. Copy File
+Copy the contents of one file into another file.
+
+LEVEL 14 – INTERMEDIATE PROJECTS
+150. Student Management System
+Create a menu-driven program:
+Add Student
+Display Students
+Search Student
+Update Student
+Delete Student
+Exit
+Use:
+Structures
+Arrays
+Functions
+151. Employee Management System
+Create a menu-driven program:
+Add Employee
+Display Employees
+Search Employee
+Update Employee
+Delete Employee
+Exit
+152. Bank Management System
+Create a program with:
+Create Account
+Deposit Money
+Withdraw Money
+Check Balance
+Display Account Details
+Exit
+153. Library Management System
+Create a program with:
+Add Book
+Display Books
+Search Book
+Issue Book
+Return Book
+Exit
+154. Quiz Program
+Create a simple multiple-choice quiz.
+Requirements:
+Display questions
+Accept answers
+Calculate score
+Display final result
+155. Simple ATM Program
+Create a menu-driven ATM:
+Check Balance
+Deposit
+Withdraw
+Change PIN
+Exit
+
+Recommended Learning Order
+1. Variables & Data Types
+        ↓
+2. Input / Output
+        ↓
+3. Operators
+        ↓
+4. if / else
+        ↓
+5. switch
+        ↓
+6. Loops
+        ↓
+7. Number Problems
+        ↓
+8. Functions
+        ↓
+9. Recursion
+        ↓
+10. Arrays
+        ↓
+11. Strings
+        ↓
+12. Pointers
+        ↓
+13. Structures
+        ↓
+14. Dynamic Memory Allocation
+        ↓
+15. File Handling
+        ↓
+16. Mini Projects
+
