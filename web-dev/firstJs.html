@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Js</title>
+</head>
+<body>
+    <h1>First Js</h1>
+    <div id="first">not clicked</div>
+    <button onClick="clickMe()">Click me to show details</button>
+
+
+</body>
+<script>
+
+        const firstDiv = document.getElementById("first");
+    function clickMe () {
+        if(firstDiv.innerHTML == "not clicked"){
+
+            firstDiv.innerHTML = "This is div text after clicked";
+            firstDiv.style.backgroundColor = "red";
+        } else{
+            firstDiv.innerHTML = "not clicked";
+            firstDiv.style.backgroundColor = "white";
+        }
+    };
+   
+</script>
+</html>
