@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oct 1 tut</title>
+<style>
+  .container {
+    position: absolute;
+    right: 0px;
+    
+    
+}
+
+.move {
+    animation: moveImage 10s linear infinite alternate;
+}
+
+@keyframes moveImage {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(800px);
+    }
+}
+</style>
+
+</head>
+<body>
+    <h1>Oct 1 tut for paths</h1>
+    <button style="margin-bottom: 10px;"  onclick="clickMe()">Click to move</button>
+
+    <div id="clickMe" style="position: relative; left: 0px;">
+<img src="./assets/images/batman-run.gif" style="width: 200px; height: 200px;">
+
+</div>
+
+
+<!-- <div> style="width: 200px; height: 200px; border-radius: 50%; background-color: red; display: flex; align-items: center; justify-content: center;">
+    inner div
+</div> -->
+
+</div>
+<div style="width: 100%; height: 5px; background-color: black;">
+    <script>
+        let clickBtn = document.getElementById("clickMe");
+    function clickMe(){
+    clickBtn.classList.toggle("move");
+ 
+        // if (clickBtn.style.right === "10px") {
+    //     clickBtn.style.right = "";
+
+    // } else {
+
+    //     clickBtn.style.right = "10px";
+    // }
+
+    }
+
+    </script>
+</body>
+</html>
