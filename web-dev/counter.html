@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count display and button</title>
+<style>
+.cont{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.innerCont{
+    width: 200px;
+    height: 200px;
+    padding: 50px;    
+    background-color: black;
+    color: white;
+    overflow: auto;
+}
+
+.innerCont span{
+    background-color: green;
+    font-size: larger;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="cont">
+    <div class="innerCont" id="counter">
+
+        <span>0</span>    
+        <code>
+        let countDisp = document.getElementById("counter");
+        let count = 0;
+
+        function updateDisplay(){
+            countDisp.innerHTML = "";
+            let p = document.createElement("span");
+            p.innerText = count;
+            countDisp.appendChild(p);
+
+        }
+        </code>
+        <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+        <code>
+<pre>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+
+    </div>
+
+</div>
+<button onclick="increment()">Increment</button>
+<button onclick="decrement()">Decrement</button>
+    <script>
+        let countDisp = document.getElementById("counter");
+        let count = 0;
+
+        function updateDisplay(){
+            countDisp.innerHTML = "";
+            let p = document.createElement("span");
+            p.innerText = count;
+            countDisp.appendChild(p);
+
+        }
+        function increment(){
+            let p = document.createElement("span");
+            p.innerText = ++count;
+            updateDisplay();
+        };
+        function decrement(){
+            let p = document.createElement("span");
+            p.innerText = --count;
+            updateDisplay();
+        };
+
+    </script>
+</body>
+</html>
