@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form localStorage</title>
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form id="studentForm">
+
+        <label>First Name:</label><br>
+        <input type="text" name="fname" required><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lname" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age"><br><br>
+
+        <label>Gender:</label><br>
+
+        <input type="radio" name="gender" value="Male">
+        <label>Male</label>
+
+        <input type="radio" name="gender" value="Female">
+        <label>Female</label>
+
+        <br><br>
+
+        <label>Skills:</label><br>
+
+        <input type="checkbox" name="skills" value="HTML">
+        <label>HTML</label>
+
+        <input type="checkbox" name="skills" value="CSS">
+        <label>CSS</label>
+
+        <input type="checkbox" name="skills" value="JavaScript">
+        <label>JavaScript</label>
+
+        <br><br>
+
+        <label>Country:</label><br>
+
+        <select name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+
+        <br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message"></textarea>
+
+        <br><br>
+
+        <button type="submit">Save Data</button>
+
+    </form>
+
+
+    <hr>
+
+    <h2>Saved Student Data</h2>
+
+    <div id="output"></div>
+
+
+    <script>
+        const form = document.getElementById("studentForm");
+        console.log("form data is being saved in localStorage", form);
+
+        const output = document.getElementById("output");
+
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+
+            const formData = new FormData(form);
+
+            const data = {};
+
+
+            formData.forEach(function(value, key) {
+
+                // Handle multiple checkbox values
+                if (data[key]) {
+
+                    if (!Array.isArray(data[key])) {
+                        data[key] = [data[key]];
+                    }
+
+                    data[key].push(value);
+
+                } else {
+
+                    data[key] = value;
+
+                }
+
+            });
+
+
+            // Save data in localStorage
+            localStorage.setItem("studentData", JSON.stringify(data));
+
+
+            // Display saved data
+            displayData();
+
+        });
+
+
+        function displayData() {
+
+            const savedData =
+                JSON.parse(localStorage.getItem("studentData"));
+
+
+            if (!savedData) {
+                output.innerHTML = "<p>No saved data.</p>";
+                return;
+            }
+
+
+            output.innerHTML = `
+
+                <p><strong>First Name:</strong>
+                    ${savedData.fname || ""}
+                </p>
+
+                <p><strong>Last Name:</strong>
+                    ${savedData.lname || ""}
+                </p>
+
+                <p><strong>Email:</strong>
+                    ${savedData.email || ""}
+                </p>
+
+                <p><strong>Age:</strong>
+                    ${savedData.age || ""}
+                </p>
+
+                <p><strong>Gender:</strong>
+                    ${savedData.gender || ""}
+                </p>
+
+                <p><strong>Skills:</strong>
+                    ${Array.isArray(savedData.skills)
+                        ? savedData.skills.join(", ")
+                        : savedData.skills || ""}
+                </p>
+
+                <p><strong>Country:</strong>
+                    ${savedData.country || ""}
+                </p>
+
+                <p><strong>Message:</strong>
+                    ${savedData.message || ""}
+                </p>
+
+            `;
+        }
+
+
+        // Show previously saved data when page loads
+        displayData();
+
+    </script>
+
+</body>
+</html>
