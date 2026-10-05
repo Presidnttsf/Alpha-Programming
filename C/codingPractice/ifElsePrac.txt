@@ -1,0 +1,88 @@
+1. Age & Driving License
+
+Write a C program that:
+
+Takes age as input.
+If age is 18 or above, check whether the person has a driving license.
+If they have a license → print "You can drive".
+Otherwise → print "Get a driving license first".
+If age is below 18 → print "You are not eligible to drive".
+2. Student Pass/Fail & Grade
+
+Write a program that:
+
+Takes marks as input.
+If marks are 40 or above, print "Pass".
+Inside the pass condition:
+If marks are 75 or above → "Distinction"
+Otherwise → "Passed"
+If marks are below 40 → "Failed".
+3. ATM Withdrawal
+
+Write a program that:
+
+Takes account balance and withdrawal amount.
+First check whether the account has sufficient balance.
+If sufficient:
+Check whether the withdrawal amount is a multiple of 100.
+If yes → "Withdrawal successful"
+Otherwise → "Enter amount in multiples of 100"
+If balance is insufficient → "Insufficient balance".
+4. Login System
+
+Write a program that:
+
+Takes a username and password.
+First check whether the username is correct.
+If the username is correct:
+Check whether the password is correct.
+If correct → "Login successful"
+Otherwise → "Wrong password"
+If username is wrong → "Wrong username".
+
+Hint: Since you're practicing nested if, you can initially use integer values like usernameCorrect = 1 instead of strings.
+
+5. Electricity Bill
+
+Write a program that:
+
+Takes electricity units as input.
+If units are greater than 100:
+Check if units are greater than 300.
+If yes → print "High electricity usage".
+Otherwise → print "Medium electricity usage".
+If units are 100 or below → print "Low electricity usage".
+6. Shopping Discount
+
+Write a program that:
+
+Takes purchase amount.
+If amount is ₹1000 or more:
+Check whether the amount is ₹5000 or more.
+If yes → "20% discount"
+Otherwise → "10% discount"
+If amount is below ₹1000 → "No discount".
+7. Exam Eligibility
+
+Write a program that:
+
+Takes attendance percentage and marks.
+First check whether attendance is 75% or above.
+If attendance is sufficient:
+Check whether marks are 40 or above.
+If yes → "Eligible and Passed"
+Otherwise → "Eligible but Failed"
+If attendance is below 75% → "Not eligible due to attendance".
+8. Movie Ticket
+
+Write a program that:
+
+Takes age as input.
+If age is 18 or above:
+Check whether the person has an ID.
+If yes → "Ticket allowed"
+Otherwise → "ID required"
+If age is below 18:
+Check whether a parent is accompanying them.
+If yes → "Ticket allowed with parent"
+Otherwise → "Not allowed".
