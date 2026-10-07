@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom mauplation</title>
+<style>
+    .MyClass{
+background-color: dodgerblue;
+
+}
+</style>
+</head>
+<body>
+    <div id="container" style="background-color: bisque;">
+        
+
+    </div>
+    
+</body>
+<script>
+let heading = document.createElement("h1");
+let heading1 = document.createElement('h3');
+heading1.innerText = "Print table";
+heading.innerText = "Dom manipulation!";
+heading.setAttribute("style",  "background-color: red; color: white;");
+console.dir("check all properties", heading.firstChild);
+console.log("check value", heading.getAttribute("style"));
+
+heading.className = "MyClass";
+heading.style.alignItems = "center"; 
+console.dir(heading);
+ let cont = document.getElementById("container");
+    let list = document.createElement("ul");
+
+
+for (let index = 1; index <= 12; index++) {
+   let child = document.createElement("li");
+    child.innerHTML = `<p>2 x ${index} = ${index*2} </p>`;
+    list.appendChild(child);
+    
+}
+cont.appendChild(heading);
+cont.appendChild(heading1);
+
+document.body.appendChild(list);
+// cont.appendChild(list);
+</script>
+</html>
