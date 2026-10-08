@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.containerRem {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+
+</style>
+<body>
+    <h1 id="heading">Event tutorial </h1>
+<div id="container">
+    
+    
+    </div>
+<button id="btn" >Click me</button>
+<button onclick="checkEve(event)" >On Enter 
+
+</button>
+<script>
+let cont = document.getElementById("container");
+let myBtn = document.getElementById("btn");
+
+let firstClick = function (){
+    console.log("button is clicked by js");
+    // cont.style.height = "200px";
+    // cont.style.width = "200px";
+    cont.innerText = "First Click";
+    // cont.style.backgroundColor = "green"
+    // cont.style.fontSize = "24px";
+    // cont.style.display = "flex";
+    // cont.style.alignItems = "center";
+    // cont.style.justifyContent = "center";
+    // cont.style.border = "1px solid black";
+    cont.setAttribute("class", "container");
+
+};
+
+let secondClick = function (){
+    console.log("2nd time button is clicked by js");
+    cont.setAttribute("class", "containerRem");
+    cont.innerText = "Second Click";
+
+}
+
+myBtn.addEventListener("click", firstClick);
+myBtn.addEventListener("dblclick", secondClick);
+// myBtn.addEventListener("click", ()=> console.log("this is 2nd event"));
+
+let count = 0;
+
+myBtn.addEventListener("click", function () {
+    count++;
+
+    if (count === 3) {
+        console.log("Triple click!");
+        count = 0;
+        cont.classList.replace("containerRem", "container");
+        cont.innerText = "Third click";
+    }
+});
+
+function checkEve(e){
+    console.log("checking", e);
+}
+
+// myBtn.removeEventListener("secondClick");
+
+
+</script>
+</body>
+
+</html>
