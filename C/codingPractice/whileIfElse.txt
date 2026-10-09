@@ -1,0 +1,163 @@
+# C Programming: 2-Day Practice Tasks
+
+Topics completed: `if-else`, `nested if-else`, `switch-case`, and `while loop`
+
+Instructions for students:
+
+- Complete the tasks using C programming.
+- Use `scanf()` to accept input from the user wherever required.
+- Use `if-else` for decision-making, `switch-case` for menu-based programs, and `while` loops for repetition.
+- Try to solve each problem independently without looking at solutions.
+
+## Day 1 — Basic Logic and Decision-Making
+
+Task 1: Even or Odd Number
+
+Accept an integer from the user and check whether it is even or odd.
+
+Concept: `if-else`, modulus operator `%`
+
+Task 2: Student Grade Calculator
+
+Accept marks out of 100 and display the grade according to these rules:
+
+- 90–100: Grade A
+- 75–89: Grade B
+- 60–74: Grade C
+- 40–59: Grade D
+- Below 40: Fail
+
+Also handle invalid marks below 0 or above 100.
+
+Concept: `if-else-if` ladder
+
+Task 3: Largest of Three Numbers
+
+Accept three integers and print the largest number. If all three numbers are equal, display an appropriate message.
+
+Concept: Nested `if-else`
+
+Task 4: Simple Calculator
+
+Accept two numbers and an operator (`+`, `-`, `*`, `/`). Use `switch-case` to perform the selected operation. Display an error if the user attempts division by zero.
+
+Concept: `switch-case`, arithmetic operators
+
+Task 5: Days in a Month
+
+Accept a month number from 1 to 12 and print the number of days in that month. For February, display 28 days for this exercise. Print an error for an invalid month number.
+
+Concept: `switch-case`, grouping multiple cases
+
+## Day 2 — While Loops and Mini-Programs
+
+Task 6: Print a Multiplication Table
+
+Accept a number from the user and print its multiplication table from 1 to 10.
+
+Example for input `5`:
+
+```
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+...
+5 x 10 = 50
+```
+
+Concept: `while` loop, counter, multiplication
+
+Task 7: Sum of Natural Numbers
+
+Accept a positive integer `n` and calculate the sum of numbers from 1 to `n`.
+
+Example: Input `5` → Output `15` (1 + 2 + 3 + 4 + 5).
+
+Concept: `while` loop, accumulator variable
+
+Task 8: Reverse a Number
+
+Accept an integer and print its digits in reverse order.
+
+Example: Input `1234` → Output `4321`.
+
+Hint: Use `% 10` to get the last digit and `/ 10` to remove it.
+
+Concept: `while` loop, modulus, integer division
+
+Task 9: ATM Menu Program
+
+Display this menu repeatedly until the user chooses Exit:
+
+```
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+```
+
+Start with a balance of ₹5,000. Allow deposits and withdrawals, prevent invalid amounts and withdrawals exceeding the balance, and display the updated balance.
+
+Concept: `while` loop + `switch-case` + `if-else`
+
+Task 10: Restaurant Billing System
+
+Display a food menu and allow the customer to select items repeatedly until they choose Checkout.
+
+| Item      | Price |
+| --------- | ----- |
+| Biryani   | ₹250  |
+| Roti      | ₹20   |
+| Korma     | ₹150  |
+| Lassi     | ₹70   |
+| Ice cream | ₹100  |
+
+Calculate the total bill and display it at checkout. Invalid menu choices should show an error.
+
+Concept: `while` loop + `switch-case` + running total
+
+## Bonus challenge — If students finish early
+
+Task 11: Number Guessing Game
+
+Set a secret number in the program. Ask the user to guess it repeatedly until they enter the correct number. After each incorrect guess, display whether the guess is too high or too low.
+
+Task 12: Count Digits in a Number
+
+Accept an integer and count how many digits it contains.
+
+Example: Input `58291` → Output `5 digits`.
+
+## Student progress checklist
+
+0 of 12 completed
+
+0%
+
+Even or odd number
+
+Student grade calculator
+
+Largest of three numbers
+
+Simple calculator
+
+Days in a month
+
+Multiplication table
+
+Sum of natural numbers
+
+Reverse a number
+
+ATM menu program
+
+Restaurant billing system
+
+Number guessing game (bonus)
+
+Count digits (bonus)
+
+Reset checklist
+
+Trainer's suggestion: Ask students to complete Tasks 1–5 on Day 1 and Tasks 6–10 on Day 2. For the last two programs, encourage them to plan the logic first using pseudocode or a flowchart. The ATM and restaurant programs are particularly useful because they combine all the topics learned so far.
