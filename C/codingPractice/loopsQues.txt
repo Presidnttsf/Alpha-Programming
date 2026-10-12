@@ -1,0 +1,124 @@
+beginner-friendly C programming practice tasks for your students covering `do-while` and `for` loops, with user input and real-life scenarios.
+
+# Day 1: Practice tasks using `do-while` loop
+
+The goal is to practice situations where the program must execute at least once and repeat based on a condition.
+
+1\. Restaurant Menu
+
+Display Biryani, Pizza, Burger, and Exit options. Take the user's choice and display the selected item. Repeat the menu until the user chooses Exit.
+
+Hint: Use `switch` inside `do-while`.
+
+2\. PIN Verification
+
+Ask the user to enter a PIN. Continue asking until the correct PIN, `1234`, is entered.
+
+Hint: Repeat while `pin != 1234`.
+
+3\. Number Addition
+
+Keep asking the user for numbers and calculate their total. Stop when the user enters `0`, then display the sum.
+
+Hint: Initialize `sum = 0`.
+
+4\. Simple Banking Menu
+
+Display options: Check Balance, Deposit, Withdraw, Exit. Update the balance after deposits and withdrawals. Continue until Exit is selected.
+
+Hint: Use `do-while`, `switch`, and an initial balance.
+
+5\. Guess the Number
+
+Set a secret number, such as `7`. Ask the user to guess until they enter the correct number. Display whether each incorrect guess is too high or too low.
+
+Hint: Use `if-else` inside `do-while`.
+
+# Day 2: Practice tasks using `for` loop
+
+The goal is to practice repetition with a counter, ranges, and mathematical calculations.
+
+6\. Multiplication Table
+
+Take a number from the user and print its multiplication table from 1 to 10.
+
+Example: Input `5` → `5 × 1 = 5` through `5 × 10 = 50`.
+
+7\. Sum of Natural Numbers
+
+Take a positive integer `n` and calculate the sum from `1` to `n`.
+
+Example: Input `5` → Output `15`.
+
+8\. Print Even Numbers
+
+Take a number `n` and print all even numbers from `1` to `n`.
+
+Example: Input `10` → `2 4 6 8 10`.
+
+9\. Student Marks
+
+Take marks for 5 subjects using a loop. Calculate the total and percentage, then display both.
+
+Challenge: Also count how many subjects have marks below 40.
+
+10\. Factorial Calculator
+
+Take a positive integer and calculate its factorial.
+
+Example: Input `5` → Output `120`, because `5 × 4 × 3 × 2 × 1 = 120`.
+
+## Bonus challenge questions
+
+These are useful for students who finish early.
+
+11. Countdown timer: Take a number and print the countdown to `1`, followed by `Go!`.
+12. Multiplication tables: Print tables from `1` to `5`, each up to `10`.
+13. Login attempts: Give the user a maximum of three PIN attempts using `do-while`.
+14. Pattern printing: Use nested `for` loops to print:
+
+```
+*
+**
+***
+****
+*****
+```
+
+15\. Prime number checker: Take a number and determine whether it is prime using a `for` loop.
+
+## Student progress tracker
+
+0 of 15 completed
+
+### 0%
+
+1\. Restaurant menu
+
+2\. PIN verification
+
+3\. Number addition
+
+4\. Banking menu
+
+5\. Guess the number
+
+6\. Multiplication table
+
+7\. Sum of natural numbers
+
+8\. Even numbers
+
+9\. Student marks
+
+10\. Factorial calculator
+
+11\. Countdown timer
+
+12\. Tables from 1 to 5
+
+13\. Three login attempts
+
+14\. Star pattern
+
+15\. Prime number checker
