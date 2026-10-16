@@ -1,0 +1,75 @@
+Here is a JavaScript practice assignment for your students covering loops, arrays, and objects. I've included 15 questions, starting from beginner level and gradually increasing in difficulty.
+
+# JavaScript Practice Assignment
+
+Topics: Loops · Arrays · Objects
+
+15 Questions
+
+Beginner to Intermediate
+
+3 Practice Sections
+
+## Section 1: Loops (5 questions)
+
+Practice `for`, `while`, and `do...while` loops.
+
+1\. Print numbers from 1 to 50 using a for loop.
+
+2\. Print the multiplication table of any number entered by the user.
+
+3\. Calculate the sum of all numbers from 1 to 100.
+
+4\. Print all even numbers between 1 and 100 using a while loop.
+
+5\. Ask the user to enter a number until they enter 0, then display the sum of all previously entered numbers.
+
+0 of 5 completed
+
+## Section 2: Arrays (5 questions)
+
+Practice array indexing, traversal, and calculations.
+
+6\. Create an array of 10 numbers and print every element using a for loop.
+
+7\. Find the sum and average of all numbers in an array.
+
+8\. Find the largest and smallest numbers in an array without using Math.max() or Math.min().
+
+9\. Count how many even and odd numbers are present in an array.
+
+10\. Reverse an array without using the reverse() method.
+
+0 of 5 completed
+
+## Section 3: Objects (5 questions)
+
+Practice object properties, accessing values, and looping through objects.
+
+11\. Create a student object with 10 key-value pairs and print each property.
+
+12\. Create an employee object with name, salary, department, and city. Print the employee's details.
+
+13\. Create an array of 5 student objects, each containing name, age, and marks. Print all student names using a loop.
+
+14\. Given a product object with name, price, and quantity, calculate the total cost.
+
+15\. Use a for...in loop to print all keys and values of an object.
+
+0 of 5 completed
+
+## Bonus challenge
+
+Combine all three topics — loops, arrays, and objects.
+
+Create an array containing 5 student objects. Each student should have a `name`, `marks`, and `city`.
+
+Your program should:
+
+1. Print all student names and marks.
+2. Find the student with the highest marks.
+3. Calculate the average marks of all students.
+4. Count how many students scored 40 or more.
+5. Display only the students who scored above 75.
+
+Instructions for students: Solve the questions using JavaScript. Avoid built-in methods that directly solve the problem where the question asks you to implement the logic yourself. Use `console.log()` to display results and test your programs with different inputs.
