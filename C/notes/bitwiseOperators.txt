@@ -1,0 +1,227 @@
+Here are student-friendly notes in a copy-paste format.
+
+# Bitwise Operators in C
+
+## 1. XOR Operator (^)
+
+XOR stands for Exclusive OR.
+
+It compares two numbers bit by bit using their binary values.
+
+**Rule:**
+
+- If both bits are different, the result is 1.
+- If both bits are the same, the result is 0.
+
+### Truth Table
+
+| Bit 1 | Bit 2 | Result |
+| ----- | ----- | ------ |
+| 0     | 0     | 0      |
+| 0     | 1     | 1      |
+| 1     | 0     | 1      |
+| 1     | 1     | 0      |
+
+### Example 1:
+
+```
+printf("%d", 5 ^ 2);
+```
+
+Step 1: Convert numbers into binary.
+
+5 = 101\
+2 = 010
+
+Step 2: Perform XOR.
+
+```
+  101  (5)
+^ 010  (2)
+-----
+  111  (7)
+```
+
+Output: `7`
+
+### Example 2:
+
+```
+printf("%d", 5 ^ 6);
+```
+
+Binary values:
+
+5 = 101\
+6 = 110
+
+```
+  101  (5)
+^ 110  (6)
+-----
+  011  (3)
+```
+
+Output: `3`
+
+Reason:
+
+- 1 and 1 = 0 (same)
+- 0 and 1 = 1 (different)
+- 1 and 0 = 1 (different)
+
+Binary 011 = Decimal 3.
+
+---
+
+## 2. Left Shift Operator (<<)
+
+The left shift operator moves all binary bits towards the left by the specified number of positions.
+
+**Syntax:**
+
+```
+number << positions;
+```
+
+### Example 1:
+
+```
+printf("%d", 5 << 1);
+```
+
+Step 1: Convert 5 into binary.
+
+5 = 00000101
+
+Step 2: Shift one position to the left.
+
+```
+Before: 00000101
+After:  00001010
+```
+
+Binary 00001010 = Decimal 10.
+
+Output: `10`
+
+### Example 2:
+
+```
+printf("%d", 5 << 2);
+```
+
+```
+Before: 00000101
+After:  00010100
+```
+
+Binary 00010100 = Decimal 20.
+
+Output: `20`
+
+### Shortcut:
+
+For non-negative integers, left shifting by n positions is equivalent to multiplying by 2 to the power n.
+
+Example:
+
+5 << 1 = 5 × 2 = 10
+
+5 << 2 = 5 × 4 = 20
+
+5 << 3 = 5 × 8 = 40
+
+---
+
+## 3. Right Shift Operator (>>)
+
+The right shift operator moves all binary bits towards the right by the specified number of positions.
+
+**Syntax:**
+
+```
+number >> positions;
+```
+
+### Example 1:
+
+```
+printf("%d", 8 >> 1);
+```
+
+Step 1: Convert 8 into binary.
+
+8 = 00001000
+
+Step 2: Shift one position to the right.
+
+```
+Before: 00001000
+After:  00000100
+```
+
+Binary 00000100 = Decimal 4.
+
+Output: `4`
+
+### Example 2:
+
+```
+printf("%d", 8 >> 2);
+```
+
+```
+Before: 00001000
+After:  00000010
+```
+
+Binary 00000010 = Decimal 2.
+
+Output: `2`
+
+### Example 3:
+
+```
+printf("%d", 5 >> 6);
+```
+
+```
+Before: 00000101
+After:  00000000
+```
+
+Output: `0`
+
+Both 1 bits have shifted out.
+
+### Shortcut:
+
+For non-negative integers, right shifting by n positions is equivalent to integer division by 2 to the power n.
+
+Example:
+
+8 >> 1 = 8 / 2 = 4
+
+8 >> 2 = 8 / 4 = 2
+
+5 >> 1 = 5 / 2 = 2 (fractional part discarded)
+
+---
+
+## 4. Quick Comparison
+
+| Operator | Name        | Meaning                   |
+| -------- | ----------- | ------------------------- |
+| ^        | XOR         | 1 when bits are different |
+| <<       | Left Shift  | Moves bits towards left   |
+| >>       | Right Shift | Moves bits towards right  |
+
+**Important Notes:**
+
+1. XOR compares bits and produces 1 when they are different.
+2. Left shift generally increases the value for non-negative integers when the result is representable.
+3. Right shift generally decreases the value for non-negative integers.
+4. In C, shifting by a negative count or by a count greater than or equal to the width of the integer type causes undefined behavior.
+
+Add a complete runnable programAdd practice questions and answers
